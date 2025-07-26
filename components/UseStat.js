@@ -26,7 +26,6 @@ export default function UseStat() {
       task.id === id ? { ...task, done: !task.done } : task
     ));
   };
-console.log(tasks);
   return (
     <div style={{backgroundColor:'black',color:'white'}}>
       <h2>Todo List</h2>
