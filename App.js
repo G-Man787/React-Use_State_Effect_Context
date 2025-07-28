@@ -1,15 +1,17 @@
 
-import './App.css';
-import React from 'react'
-import UseStat from './components/UseStat';
-import UseEff from './components/UseEff';
+import React from "react";
+import { ThemeProvider } from "./components/ThemeContext.js";
+import Header from "./components/Header.js";
+import Content from "./components/Content";
 
 function App() {
   return (
-    <div className="App">
-      <UseStat/>
-      <UseEff/>
-    </div>
+    <ThemeProvider>
+      <div>
+        <Header />
+        <Content />
+      </div>
+    </ThemeProvider>
   );
 }
 
